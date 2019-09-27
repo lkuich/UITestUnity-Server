@@ -1,11 +1,11 @@
 # UITest Unity Server
 
 This is the embedded server that runs in a Unity Project to facilitate automated testing with Xamarin.UITest.  
-The companion test project is located here: https://bitbucket.org/agentsofdiscovery/uitestclient/overview
+For use with the the companion [UITestUnity-Client](https://github.com/lkuich/UITestUnity-Client) project.
 
 ## Setup
 - Target .NET 4.X, .NET Standard 2.0
-- Grab the `UITestUnity-X.X.unitypackage` and import it in your project
+- Grab a `unitypackage` from the [Releases](https://github.com/lkuich/UITestUnity-Server/releases) page and import it in your project
 - Place `StartTestServer.cs` on a scene that will never be destroyed. This will start a UITest Server when creating a debug build of your application, listening on your devices `IP:8081`
 - Add JSON.NET to your project. There's a Unity specific version that supports IL2CPP, https://github.com/SaladLab/Json.Net.Unity3D/releases  
 *or* you can easily use a different serialization library by modifying `RouteT.cs`
